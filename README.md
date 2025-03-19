@@ -1,42 +1,37 @@
-Ensemble Modeling Project
-📌 Project Overview
-This project applies ensemble machine learning techniques to predict whether a bank customer will subscribe to a term deposit based on marketing campaign data.
+# 🎯 Ensemble Modeling Project
 
-🏦 Dataset: Bank Marketing Campaign Data
-The dataset is related to direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls, and the goal is to predict whether a client will subscribe (yes/no) to a term deposit.
+## 📌 Project Overview
+This project applies **ensemble machine learning techniques** to predict whether a bank customer will subscribe (`yes`/`no`) to a term deposit. We leverage **Bagging, Boosting, and Stacking** techniques to improve model performance.
 
-📂 Data Features
-Demographic Data: Age, job, marital status, education, etc.
-Financial Information: Account balance, default status, housing loan, personal loan.
-Campaign Data: Number of contacts, last contact month, duration of call, etc.
-Previous Campaign Outcome: Previous interactions with the client.
-🎯 Objective
-To build a classification model that predicts whether a client will subscribe (yes/no) to a term deposit using ensemble learning techniques.
+## 📊 Dataset: Bank Marketing Campaign Data
+The dataset contains information on **customer demographics, financial attributes, and marketing campaign interactions**. The goal is to analyze these features and build a predictive model.
 
-📊 Project Steps
-Exploratory Data Analysis (EDA)
+### 🏦 **Dataset Features**
+- **Customer Information:** Age, job type, marital status, education level
+- **Financial Status:** Account balance, default history, housing and personal loans
+- **Campaign Details:** Number of contacts, contact month, last contact duration
+- **Previous Campaign Results:** Previous interactions and their outcomes
+- **Target Variable (`y`)**: Whether the client subscribed to the term deposit (`yes` or `no`)
 
-Shape and structure of data
-Handling missing values and outliers
-Summary statistics and visualizations
-Data Preprocessing
+## 🚀 **Project Workflow**
+### **Step 1: Exploratory Data Analysis (EDA)**
+✔ Data summary & visualization  
+✔ Missing values & outliers handling  
+✔ Feature correlations  
 
-Encoding categorical variables
-Scaling numerical variables
-Handling missing values
-Model Training (Base Models)
+### **Step 2: Data Preprocessing**
+✔ Encoding categorical variables  
+✔ Scaling numerical variables  
+✔ Feature selection  
 
-Logistic Regression
-Decision Tree
-Random Forest
-Support Vector Machine
-Ensemble Learning
+### **Step 3: Model Training**
+✔ **Base Models:** Logistic Regression, Decision Tree, Random Forest, SVM  
+✔ **Ensemble Learning:**  
+   - ✅ Bagging (Random Forest, Bagging Classifier)  
+   - ✅ Boosting (AdaBoost, Gradient Boosting, XGBoost, LightGBM)  
+   - ✅ Stacking (Combining multiple models)  
 
-Bagging (Random Forest, Bagging Classifier)
-Boosting (AdaBoost, Gradient Boosting, XGBoost, LightGBM, CatBoost)
-Stacking (Combining multiple models for better performance)
-Model Evaluation
-
-Accuracy, Precision, Recall, F1-score
-ROC-AUC Curve, Feature Importance
-Comparing base models vs ensemble models
+### **Step 4: Model Evaluation**
+✔ Accuracy, Precision, Recall, F1-score  
+✔ ROC-AUC Curve & Feature Importance  
+✔ Compare Base Models vs. Ensemble Models 
